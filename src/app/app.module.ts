@@ -1,3 +1,4 @@
+import { LoginComponent } from './pages/seguranca/login/login.component';
 import { PrimengModule } from './primeng.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -8,7 +9,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, LoginComponent
   ],
   imports: [
     CommonModule,
