@@ -1,3 +1,4 @@
+import { DashboardModule } from './pages/dashboard/dashboard.module';
 import { LoginComponent } from './pages/seguranca/login/login.component';
 import { PrimengModule } from './primeng.module';
 import { NgModule } from '@angular/core';
