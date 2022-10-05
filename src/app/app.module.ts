@@ -8,18 +8,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
+import { NavbarComponent } from './pages/shared/navbar/navbar.component';
 @NgModule({
   declarations: [
-    AppComponent, LoginComponent
+    AppComponent, LoginComponent, NavbarComponent
   ],
   imports: [
     CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    PrimengModule
+    PrimengModule,
+    DashboardModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [NavbarComponent]
 })
 export class AppModule { }

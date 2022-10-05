@@ -1,6 +1,6 @@
- <div class="mt-5">
-  <p>
-    dashboard works!
-  </p>
-  
- </div>
+<p-sidebar [(visible)]="display" [baseZIndex]="10000">
+  <h1>Pessoas</h1>
+  <h1>Lançamentos</h1>
+</p-sidebar>
+
+<p-button type="text" (click)="display = true" icon="pi pi-plus" label="Show"></p-button>
