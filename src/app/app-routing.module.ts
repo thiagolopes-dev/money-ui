@@ -4,7 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
-
+  {
+    path: 'pessoas',
+    loadChildren: () =>
+      import('./pages/pessoas/pessoas.module').then(
+        (m) => m.PessoasModule
+      ),
+  },
   {
     path: 'dashboard',
     loadChildren: () =>

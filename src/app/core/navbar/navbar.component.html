@@ -1,0 +1,19 @@
+
+<div class="bg-bluegray-900 text-gray-100 p-3 flex flex-wrap">
+  <div class="font-bold" (click)="exibindoMenu()"><i class="pi pi-bars cursor-pointer" style="font-size: 1.5rem"></i></div>
+</div>
+
+
+<p-sidebar [(visible)]="menu" [baseZIndex]="10000">
+     <div>
+      <p-button styleClass="w-full" label="Pessoas" (click)="pessoas()"
+      routerLink="/pessoas" routerLinkActive="active" ></p-button>
+     </div>
+
+     <div class="mt-2">
+      <p-button styleClass="w-full" label="Lançamentos"></p-button>
+     </div>
+
+</p-sidebar>
+
+<!-- <p-button type="text" (click)="display = true" icon="pi pi-plus" label="Show"></p-button> -->
