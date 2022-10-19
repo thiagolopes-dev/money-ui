@@ -1,3 +1,4 @@
+import { PessoasModule } from './pages/pessoas/pessoas.module';
 import { DashboardModule } from './pages/dashboard/dashboard.module';
 import { LoginComponent } from './pages/seguranca/login/login.component';
 import { PrimengModule } from './primeng.module';
@@ -18,6 +19,7 @@ import { CoreModule } from './core/core/core.module';
     CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
+    PessoasModule,
     CoreModule,
     AppRoutingModule,
     PrimengModule,

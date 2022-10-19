@@ -3,21 +3,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+
+  { path: '',redirectTo: 'pessoas', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
-  {
-    path: 'pessoas',
-    loadChildren: () =>
-      import('./pages/pessoas/pessoas.module').then(
-        (m) => m.PessoasModule
-      ),
-  },
-  {
-    path: 'dashboard',
-    loadChildren: () =>
-      import('./pages/dashboard/dashboard.module').then(
-        (m) => m.DashboardModule
-      ),
-  },
+  
+  
 ];
 
 @NgModule({

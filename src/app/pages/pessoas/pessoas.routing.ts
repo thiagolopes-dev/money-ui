@@ -4,7 +4,7 @@ import { PessoasListaComponent } from './pessoas-lista/pessoas-lista.component';
 import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
 
 const routes: Routes = [
-{path:'', component: PessoasListaComponent},
+{path:'pessoas', component: PessoasListaComponent},
 {path:'pessoas/novo', component: PessoaCadastroComponent},
 {path:':codigo', component: PessoaCadastroComponent},
 
