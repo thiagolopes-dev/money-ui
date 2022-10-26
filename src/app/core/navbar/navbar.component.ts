@@ -1,5 +1,5 @@
-import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -15,13 +15,18 @@ export class NavbarComponent implements OnInit {
   menu: boolean = false;
   ngOnInit() {
   }
- exibindoMenu(){
-  this.menu = true;
- }
- pessoas(){
-  console.log('entrou aqui');
- }
- home(){
-  this.router.navigate(['/']);
- }
+  exibindoMenu() {
+    this.menu = true;
+  }
+  pessoas() {
+    this.router.navigate(['/pessoas']);
+    this.menu = false;
+  }
+  lancamentos() {
+    this.router.navigate(['/lancamentos']);
+    this.menu = false;
+  }
+  home() {
+    this.router.navigate(['/']);
+  }
 }

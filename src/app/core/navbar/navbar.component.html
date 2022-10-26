@@ -9,12 +9,13 @@
 
 <p-sidebar [(visible)]="menu" [baseZIndex]="10000">
   <div>
-    <p-button styleClass="w-full" label="Pessoas" (click)="pessoas()" routerLink="/pessoas" routerLinkActive="active">
+    <p-button styleClass="w-full" label="Pessoas" (click)="pessoas()">
     </p-button>
   </div>
 
   <div class="mt-2">
-    <button styleClass="w-full" label="Lançamentos"  routerLinkActive="active"></button>
+    <p-button styleClass="w-full" label="Lançamentos" (click)="lancamentos()" routerLinkActive="active">
+    </p-button>
   </div>
 
 </p-sidebar>

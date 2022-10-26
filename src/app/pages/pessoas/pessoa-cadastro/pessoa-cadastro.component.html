@@ -1,52 +1,59 @@
 <main>
-  <div class="grid col-12">
-    <p-button icon="pi pi-arrow-left" routerLink="/pessoas"
-    pTooltip="Lista Pessoas " tooltipPosition="right"></p-button>
-    <h1>Cadastro de Pessoa</h1>
-  </div>
+  <p-card styleClass="card-adjust">
+    <div class="grid col-12">
+      <p-button icon="pi pi-arrow-left" routerLink="/pessoas" pTooltip="Lista Pessoas " tooltipPosition="right">
+      </p-button>
+      <h1>Cadastro de Pessoa</h1>
+    </div>
 
-  <div class="grid flex flex-wrap">
+    <div class="grid flex flex-wrap">
 
-   <div class="col-12 md:col-6 lg:col-2">
-    <span>Nome</span>
-    <input class="w-full" type="text" pInputText> 
-   </div>
+      <div class="col-12 md:col-6 lg:col-2">
+        <span>Nome</span>
+        <input class="w-full" type="text" pInputText upperCase>
+      </div>
 
-   <div class="col-12 md:col-6 lg:col-2">
-    <span>Cep</span>
-    <input class="w-full" type="text" pInputText>
-   </div>
+      <div class="col-12 md:col-6 lg:col-2">
+        <span>Cep</span>
+        <input class="w-full" type="text" pInputText>
+      </div>
 
-   <div class="col-12 md:col-6 lg:col-2">
-    <span>Logradouro</span>
-    <input  class="w-full" type="text" pInputText>
-   </div>
+      <div class="col-12 md:col-6 lg:col-2">
+        <span>Logradouro</span>
+        <input class="w-full" type="text" pInputText upperCase>
+      </div>
 
-   <div class="col-12 md:col-6 lg:col-2">
-    <span>Bairro</span>
-    <input  class="w-full" type="text" pInputText>
-   </div>
+      <div class="col-12 md:col-6 lg:col-2">
+        <span>Bairro</span>
+        <input class="w-full" type="text" pInputText upperCase>
+      </div>
 
-   <div class="col-12 md:col-6 lg:col-2">
-    <span>Número</span>
-    <input  class="w-full" type="text" pInputText>
-   </div>
+      <div class="col-12 md:col-6 lg:col-2">
+        <span>Número</span>
+        <input class="w-full" type="text" pInputText upperCase>
+      </div>
 
-   <div class="col-12 md:col-6 lg:col-2">
-    <span>Complemento</span>
-    <input  class="w-full" type="text" pInputText>
-   </div>
+      <div class="col-12 md:col-6 lg:col-2">
+        <span>Complemento</span>
+        <input class="w-full" type="text" pInputText upperCase>
+      </div>
 
-   <div class="col-12 md:col-6 lg:col-2">
-    <span>Cidade</span>
-    <input  class="w-full" type="text" pInputText>
-   </div>
+      <div class="col-12 md:col-6 lg:col-2">
+        <span>Cidade</span>
+        <input class="w-full" type="text" pInputText>
+      </div>
 
-   <div class="col-12 md:col-6 lg:col-2">
-    <span>Estado</span>
-    <input  class="w-full" type="text" pInputText>
-   </div>
+      <div class="col-12 md:col-6 lg:col-2">
+        <span>Estado</span>
+        <input class="w-full" type="text" pInputText>
+      </div>
 
-  </div>
+      <div class="flex flex-wrap col-12 justify-content-center">
+        <div class="col-12 md:col-6 lg:col-3">
+          <button pButton pRipple type="button" label="Salvar" class="p-button-success w-full"></button>
+        </div>
+      </div>
 
+    </div>
+  </p-card>
 </main>

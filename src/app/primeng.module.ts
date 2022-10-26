@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
-import {ButtonModule} from 'primeng/button';
-import {InputTextModule} from 'primeng/inputtext';
-import {CheckboxModule} from 'primeng/checkbox';
-import {SidebarModule} from 'primeng/sidebar';
-import {TooltipModule} from 'primeng/tooltip';
+import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
+import { CheckboxModule } from 'primeng/checkbox';
+import { InputTextModule } from 'primeng/inputtext';
+import { SidebarModule } from 'primeng/sidebar';
+import { TooltipModule } from 'primeng/tooltip';
 
 @NgModule({
   exports: [
@@ -11,7 +12,8 @@ import {TooltipModule} from 'primeng/tooltip';
     InputTextModule,
     CheckboxModule,
     SidebarModule,
-    TooltipModule
+    TooltipModule,
+    CardModule
   ],
   declarations: []
 })

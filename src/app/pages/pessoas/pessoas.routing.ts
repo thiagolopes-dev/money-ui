@@ -1,14 +1,14 @@
-import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from "@angular/core";
-import { PessoasListaComponent } from './pessoas-lista/pessoas-lista.component';
+import { RouterModule, Routes } from '@angular/router';
 import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
+import { PessoasListaComponent } from './pessoas-lista/pessoas-lista.component';
 
 const routes: Routes = [
-{path:'pessoas', component: PessoasListaComponent},
-{path:'pessoas/novo', component: PessoaCadastroComponent},
-{path:':codigo', component: PessoaCadastroComponent},
+    { path: '', component: PessoasListaComponent },
+    { path: 'pessoas/novo', component: PessoaCadastroComponent },
+    { path: ':codigo', component: PessoaCadastroComponent },
 
- ];
+];
 
 @NgModule({
     imports: [
@@ -17,4 +17,4 @@ const routes: Routes = [
     exports: [RouterModule]
 })
 
-export class PessoasRoutingModule {}
+export class PessoasRoutingModule { }
