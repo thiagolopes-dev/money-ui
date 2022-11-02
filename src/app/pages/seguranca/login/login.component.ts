@@ -1,5 +1,6 @@
-import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -10,14 +11,16 @@ export class LoginComponent implements OnInit {
 
   logo: any = '/assets/icons/logo_icon.png';
   constructor(
-    private router: Router
+    private router: Router,
+    private title: Title
   ) { }
 
   ngOnInit(): void {
+    this.title.setTitle('Login');
   }
 
-  logar(){
-    this.router.navigate(['dashboard']);
+  logar() {
+    this.router.navigate(['/pessoas']);
   }
 
 }

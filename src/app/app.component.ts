@@ -11,12 +11,16 @@ export class AppComponent implements OnInit {
 
   constructor(
     private router: Router
-  ){}
+  ) { }
 
-  ngOnInit(){}
+  ngOnInit() { }
 
-  navegaLogin(){
+  navegaLogin() {
     this.router.navigate(['/login']);
+  }
+
+  exibindoNavbar() {
+    return this.router.url !== '/login';
   }
 }
 
