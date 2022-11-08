@@ -70,4 +70,8 @@ export class PessoaCadastroComponent implements OnInit {
     console.log(this.cidadesFiltradas);
   }
 
+  salvar(form: NgForm) {
+    console.log(form);
+  }
+
 }
