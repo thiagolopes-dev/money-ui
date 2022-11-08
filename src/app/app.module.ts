@@ -4,7 +4,6 @@ import { DashboardModule } from './pages/dashboard/dashboard.module';
 import { LoginComponent } from './pages/seguranca/login/login.component';
 import { PrimengModule } from './primeng.module';
 
-import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -18,7 +17,6 @@ import { CoreModule } from './core/core.module';
     AppComponent, LoginComponent
   ],
   imports: [
-    CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,

@@ -45,15 +45,16 @@
 
       <div class="col-12 md:col-6 lg:col-3">
         <span>Estado</span>
-        <p-dropdown styleClass="w-full" [options]="estados" name="uf" placeholder="Selecione..." optionLabel="estado"
-          optionValue="uf" (onChange)="buscarCidades(pessoas.uf)" [filter]="true" [virtualScroll]="true"
-          [virtualScrollItemSize]="30" filterBy="uf,estado">
-        </p-dropdown>
+        <p-dropdown styleClass="w-full" [options]="estados" [(ngModel)]="pessoas.uf" #uf="ngModel" name="uf"
+          placeholder="Selecione..." optionLabel="estado" optionValue="uf" filter="true" [virtualScroll]="true"
+          (onChange)="buscarCidades($event.value)" [virtualScrollItemSize]="30" filterBy="uf,estado"></p-dropdown>
       </div>
 
       <div class="col-12 md:col-6 lg:col-3">
         <span>Cidade</span>
-        <p-dropdown styleClass="w-full" [options]="cidadesFiltradas" optionLabel="name">
+        <p-dropdown styleClass="w-full" [options]="cidadesFiltradas" [disabled]="!pessoas.uf"
+          [(ngModel)]="pessoas.cidade" #cidade="ngModel" name="cidade" placeholder="Selecione..." optionLabel="cidade"
+          optionValue="cidade" filter="true" [virtualScroll]="true" [virtualScrollItemSize]="30">
         </p-dropdown>
       </div>
 

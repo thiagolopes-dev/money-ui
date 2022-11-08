@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { Pessoas } from 'src/app/core/models/pessoas.model';
@@ -47,6 +48,26 @@ export class PessoaCadastroComponent implements OnInit {
         this.spinner.hide();
         console.log(erro);
       });
+  }
+
+  validaEstado(uf: any, form: NgForm) {
+    this.spinner.show();
+    this.cidadesFiltradas = [];
+    console.log(uf);
+    if (uf) {
+      (async () => {
+        await Promise.all(
+          this.cidades.map(async (element) => {
+            console.log(uf);
+            if (uf.value.uf === element.SIGLA || uf.value === element.SIGLA) {
+              this.cidadesFiltradas.push({ ...element });
+            }
+          })
+        );
+        this.spinner.hide();
+      })();
+    }
+    console.log(this.cidadesFiltradas);
   }
 
 }
